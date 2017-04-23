@@ -1,6 +1,6 @@
 {
   "name": "crowd-control",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Control promises in a queue with optional timeouts.",
   "main": "./dist/index.js",
   "files": [
