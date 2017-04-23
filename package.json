@@ -1,0 +1,52 @@
+{
+  "name": "crowd-control",
+  "version": "0.0.0",
+  "description": "Control promises in a queue with optional timeouts.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "babel-node ./src/spec.js",
+    "build": "rollup -c ./rollup.config.js",
+    "prepublish": "npm run build"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfrankland/crowd-control.git"
+  },
+  "keywords": [
+    "promises",
+    "promise",
+    "queue",
+    "timeout"
+  ],
+  "author": "Dylan Frankland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dfrankland/crowd-control/issues"
+  },
+  "homepage": "https://github.com/dfrankland/crowd-control#readme",
+  "contributors": [],
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1"
+  },
+  "dependencies": {},
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "stage-0"
+    ]
+  }
+}
